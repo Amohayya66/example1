@@ -89,7 +89,7 @@
     <nav>
       <a href="index.html">الرئيسية</a>
       <a href="maintenance.html">الصيانة</a>
-      <a href="#">المالية</a>
+      <a href="finance.html">المالية</a>
       <a href="#">الإعدادات</a>
     </nav>
   </header>
@@ -100,6 +100,9 @@
     <form action="#" method="post">
       <label for="tenantName">اسم المستأجر</label>
       <input type="text" id="tenantName" name="tenantName" required>
+
+      <label for="idNumber">رقم الهوية</label>
+      <input type="text" id="idNumber" name="idNumber" pattern="\d{10}" maxlength="10" minlength="10" required placeholder="أدخل رقم الهوية (10 خانات)">
 
       <label for="unitNumber">رقم الوحدة</label>
       <input type="text" id="unitNumber" name="unitNumber" required>
