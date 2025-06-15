@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلبات الصيانة</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #F5F7FA;
+    }
+
+    header {
+      background-color: #4A3AFF;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      margin-left: 1rem;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4A3AFF;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 1rem;
+      background-color: #4A3AFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #392dcc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط علوي -->
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="66.jpg" alt="شعار المجمع">
+      <h1 style="margin: 0;">🏢 إدارة المجمع السكني</h1>
+    </div>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="maintenance.html">الصيانة</a>
+      <a href="#">المالية</a>
+      <a href="#">الإعدادات</a>
+    </nav>
+  </header>
+
+  <!-- نموذج طلب صيانة -->
+  <div class="container">
+    <h2>طلب صيانة جديد</h2>
+    <form action="#" method="post">
+      <label for="tenantName">اسم المستأجر</label>
+      <input type="text" id="tenantName" name="tenantName" required>
+
+      <label for="unitNumber">رقم الوحدة</label>
+      <input type="text" id="unitNumber" name="unitNumber" required>
+
+      <label for="issueType">نوع المشكلة</label>
+      <select id="issueType" name="issueType">
+        <option>تسرب مياه</option>
+        <option>عطل كهربائي</option>
+        <option>تكييف</option>
+        <option>أخرى</option>
+      </select>
+
+      <label for="details">تفاصيل إضافية</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+</body>
+</html>
